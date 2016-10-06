@@ -1,11 +1,10 @@
-print "Enter a starting number: "
-num = Integer(gets)
 
+num=6
 
-  puts num
+#puts num
 
   if num.even?
-    num /= 2
-  else
-    num *= 3
+    puts"#{num}=even"
+    else
+    	puts"#{num}=odd"
   end
