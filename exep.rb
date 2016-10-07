@@ -1,3 +1,9 @@
+# Handle exception when opening and reading a file.
+# Open and read contents from file.
+# If the file does not open or cannot be read, raise an exception with appropraite message.
+
+
+
 
 aFile = File.new("manju.txt", "r")
 if aFile
@@ -15,19 +21,11 @@ end
 
 file = nil
 begin
-  file = File.open("manju.txt")
+  file = File.open("unknown.txt")
   raise
 rescue
   p 'I rescue all exception and raise new ones'
 ensure
-  file.close
+  #file.close
   p 'just closed the file'
 end
-
-
-
-
-
-
-
-

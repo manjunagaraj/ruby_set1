@@ -1,28 +1,13 @@
-class Mobiles
 
-  def initialize(list)
-  	puts"#{@Mobiles['10000']}"
-  end
-
+ class Lottery  
+ 	def initialize
+     # json
+     p={1 => "1st_prize", 2 => "2nd_prize", 3 => "3rd_prize", 4 => "4th_prize", 5 => "5th_prize", 6 => "6th_prize", 7 => "7th_prize", 8 => "8th_prize", 9 => "9th_prize", 10 => "10th_prize"}
+     # p={"samsung" => '10,000', :"asus" => '15,000'}
+     puts "Enter any number form 1 to 10"
+     input=gets.to_i    
+      #input=gets.chomp
+     puts "#{p[input]}"
+ end
 end
-
-@mobiles = Hash[
-  "samsung"=> 10000,
-  "motorola"=> 15000,
-  "apple"=> 60000,
-  "nokia"=>20000,
-  "geony"=>15000,
-  "intex"=>10000,
-  "g5"=>12000,
-  "blackberry"=>50000,
-  "oppo"=>8000,
-  "rokia"=>16000]
-
-
-brand = "samsung" 
-rate = Mobile.new(samsung)
-rate.initialize(samsung)
-
-
-
-
+endprize1 = Lottery.new
